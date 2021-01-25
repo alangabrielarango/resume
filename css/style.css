@@ -1,0 +1,204 @@
+/*setting the height to its maximum for the home page*/
+html, body{
+    height: 100%;
+}
+
+/*removing any white borders that the webpage could have so I can use a full screen*/
+* {
+    margin:0;
+    padding:0;
+}
+
+/*setting a footer that stays in the bottom. Font family were taken from Bootstrap so it can match with it*/
+footer{
+    background-color:#212529;
+    position: relative;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Heading 4 was aligned to the right for styling */
+h4{          
+    text-align: right;    
+    padding: 5px;
+}
+
+/* Overflow was set to automatic so it can decided when to put scrollbar if the content doesn't fit*/
+#main{
+    overflow: auto;
+    
+}
+
+/* A minimum height of 100% was set so it can set as a cover the main page */
+#container{
+    min-height: 100%;
+}
+
+/*
+This code has been sourced from
+https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+and used to create the slideshow gallery in the main page
+*/
+  
+/* Position the image container (needed to position the left and right arrows) */
+.img-container {
+position: relative;
+}
+  
+/* Hide the images by default */
+.img-mySlides {
+display: none;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.img-cursor {
+cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.img-prev,
+.img-next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.img-next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.img-prev:hover,
+.img-next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.img-numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+   
+.img-row:after {
+content: "";
+display: table;
+clear: both;
+}
+  
+/* Six columns side by side */
+.img-column {
+float: left;
+width: 16.66%;
+}
+  
+/* Add a transparency effect for thumnbail images */
+.img-demo {
+opacity: 0.6;
+}
+  
+.active,
+.img-demo:hover {
+opacity: 1;
+}
+
+/*----end of source from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+
+/* setting a padding for the text inside a jumbotron */
+.jumbotronText{
+    padding: 5%;
+}
+
+/* styling parragraphs on jumbotron */
+.jumbotronText p{
+    background-color: #e9ecef;
+    color: black;
+    border: 20px solid #e9ecef;
+    border-radius: 10px;
+}  
+
+/* styling heading 1 on jumbotron */
+.jumbotronText h1{
+    background-color: #e9ecef;
+    color: black;
+    border: 20px solid #e9ecef;
+    border-radius: 10px;
+    display: inline;
+}  
+
+/* setting a padding for the jumbotron */
+.jumbotron{
+    padding: 0%;
+}
+
+/* setting a width for the image in the jumbotron */
+.jumbotron img{
+    width: 10%;
+}
+
+/* styling the image caption on the main page */
+#img-caption{
+    background-color: rgb(201, 201, 201); 
+    margin: 0%;
+    text-align: right;
+}
+
+/* styling the image on the main page */
+#myTitle img {
+    float: right;    
+    border-radius: 20px;
+    position: relative;
+    right: 10px;
+}
+
+/* styling h1 on the main page*/
+#myTitle h1 {
+    position: relative;
+    top: 20px;
+    
+}
+
+/* styling images on the education page */
+.edu-img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+/* setting a gray background for the education page */
+.gray{
+    background-color:rgba(225, 225, 225, 0.8);
+    border-radius: 20px;
+}
+
+/* styling the border for the badges on the skills page */
+.badge-light{
+    border-radius: 20px;
+}
+
+/* styling the images on the work experience page */
+.we-img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
